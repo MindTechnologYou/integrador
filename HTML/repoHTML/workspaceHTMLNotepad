@@ -1,0 +1,13 @@
+<NotepadPlus>
+    <Project name="html">
+        <Folder name="css">
+            <File name="css\styles.css" />
+        </Folder>
+        <Folder name="img">
+            <File name="img\scones.jpg" />
+            <File name="img\SOC-Logo.png" />
+        </Folder>
+        <File name="README.md" />
+        <File name="index.html" />
+    </Project>
+</NotepadPlus>
