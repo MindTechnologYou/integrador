@@ -1,0 +1,148 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="screen" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link th:href="@{/styles/style/main.css}" rel="stylesheet" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="menu">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Vacation Rentals</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- div containing the toggable navigation -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <!-- navigation menu -->
+                        <ul class="navbar-nav mr-auto">
+                            <!-- active link corresponding to the current page -->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trip Description</a>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Book Travels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Reservations</a>
+                                </li>
+                        </ul>
+                        <!-- inline form inside the navbar -->
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <!-----------------------------------------Area de encabezado----------------------------------------------------------->
+        <div class="row">
+            <header></header>
+            <header class="col jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1 class="display-4 text-light">
+                        Tu texto de promocion para tus productos
+                    </h1>
+                    <p class="lead text-primary">Sed placerat fringilla quam et.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Start Now!</button>
+                </div>
+            </header>
+        </div>
+        <!-----------------------------------------Area de PRODUCTOS----------------------------------------------------------->
+        <div class="row">
+            <div class="col-sm pb-4">
+                <a href="#">
+                    <img class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" src="https://images.unsplash.com/photo-1427097829427-56a905bf7004?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;s=ed5baaa96c051e370f059f1d2eb3c227"
+                        alt=""></a>
+                <h3 class="text-center mb-2">Type 1</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <button class="btn btn-success">Book Now @ $599&gt;</button>
+            </div>
+            <div class="col-sm pb-4">
+                <a href="#">
+                    <img class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;s=ca9f0a95d0cff8019f8edd8228ef0279"
+                        alt="">
+                </a>
+                <h3 class="text-center mb-2">Type 2</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <button class="btn btn-danger">Book Now @ $899&gt;</button>
+            </div>
+            <div class="col-sm pb-4">
+                <a href="#">
+                    <img class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" src="https://images.unsplash.com/photo-1440778303588-435521a205bc?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;s=436ad7567b8c0da884ca42fcdaee4db0"
+                        alt="">
+                </a>
+                <h3 class="text-center mb-2">Type 3</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <button class="btn btn-info">Book Now @ $699</button>
+            </div>
+        </div>
+        <!---------------------------Pie---------------------------------------------------------------->
+        <footer class="row pt-4">
+
+            <!-- first column -->
+            <div class="col-sm">
+                <small><p>© 2018</p></small>
+            </div>
+
+            <!-- second column -->
+            <div class="col-sm">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Support 24x7</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- third column -->
+            <div class="col-sm">
+                <small><p class="text-right">Vacation Rentals</p></small>
+            </div>
+
+        </footer>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
